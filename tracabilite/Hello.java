@@ -1,15 +1,22 @@
 package fr.uha.iut;
 
-import junit.framework.TestCase;
+public class Hello {
 
-public class HelloTest extends TestCase {
-
-    public void testHelloNoParam() {
-        assertEquals("Hello World!", Hello.hello());
+    public static String hello() {
+        return "Hello World!";
     }
 
-    public void testHelloWithParam() {
-        assertEquals("Alice", Hello.hello("Alice"));
+    public static String hello(String name) {
+        return name;
+    }
+
+    public static String goodbye() {
+        return "Goodbye!";
+    }
+
+    public static String goodbye(String name) {
+        return "Goodbye " + name + "!";
     }
 }
+
 

@@ -11,4 +11,15 @@ public class HelloTest extends TestCase {
     public void testHelloWithParam() {
         assertEquals("Alice", Hello.hello("Alice"));
     }
+
+    public void testGoodbyeNoParam() {
+        assertEquals("Goodbye!", Hello.goodbye());
+    }
+
+    public void testGoodbyeWithParam() {
+        assertEquals("Goodbye Alice!", Hello.goodbye("Alice"));
+    }
 }
+
+
+
